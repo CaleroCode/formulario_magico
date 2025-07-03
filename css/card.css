@@ -1,4 +1,6 @@
 .card {
+  align-items: center;
+  justify-content: center;
   max-width: 350px;
   padding: 8px;
   border-radius: 20px;

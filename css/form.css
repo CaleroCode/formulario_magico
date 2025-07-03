@@ -1,4 +1,6 @@
-.form {
+form {
+  justify-content: center;
+  align-items: center;
   max-width: 350px;
   padding: 0.4rem;
   border-radius: 10px;
@@ -67,7 +69,6 @@
   justify-content: center; 
   padding: 14px 30px;
   position: relative;
-  padding: 14px 30px;
   font-size: 10px;
   background-color: #ffd700; 
   color: #000;
@@ -79,7 +80,7 @@
   box-shadow: 0 0 10px #ffd700, 0 0 20px #ffc400;
   transition: transform 0.1s;
   height: 20px;
-  width: 260px;
+  width: 320px;
 }
   .magic-boton:active {
   transform: scale(0.97);

@@ -14,16 +14,16 @@
     
             <form class="form">
             <label for="nombre" class="form__label">Nombre mágico</label>
-            <input type="text" id="nombre" class="form__input" placeholder="No... no vale Harry Potter..." />
+            <input type="text" id="nombre" class="form__input" placeholder="No... no vale Harry Potter..." required/>
 
             <label for="correo" class="form__label">Correo encantado</label>
-            <input type="email" id="correo" class="form__input" placeholder="Ej. PacoLonia@hechicerodebar.net" />
+            <input type="email" id="correo" class="form__input" placeholder="Ej. PacoLonia@hechicerodebar.net" required/>
 
             <label for="magia" class="form__label">Tipo de magia preferida</label>
-            <select id="magia" class="form__select">
+            <select id="magia" class="form__select" required>
             <option value="">-- Selecciona una --</option>
             <option value="fuego">Fuego</option>
-            <option value="agua">AGUA</option>
+            <option value="agua">Agua</option>
             <option value="aire">Aire</option>
             <option value="tierra">Tierra</option>
             </select>
@@ -32,17 +32,17 @@
             <fieldset class="form__fieldset">
             <legend class="form__label">¿Tienes varita?</legend>
             <label class="form__option">
-                <input type="radio" name="varita" value="si" />
+                <input type="radio" name="varita" value="si" required/>
                 Sí
             </label>
             <label class="form__option">
-                <input type="radio" name="varita" value="no" />
+                <input type="radio" name="varita" value="no" required/>
                 No
             </label>
             </fieldset>
 
             <label class="form__checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" required/>
             Acepto las normas del Grimorio 📋
             </label>
 
@@ -50,12 +50,11 @@
             <textarea id="comentarios" class="form__textarea" rows="4" placeholder="¡Mientras no sea un avada kedavra a la cabra, comenta lo que quieras!"></textarea>
 
            <button class="magic-boton">Unirme al Club ✨</button>
-
+            <div class="fondo-cambiante"></div>
   </form>
 
     <section class="card-darkmode"><button id="toggle-mode"  class="mode-toggle">&lt;DARKMODE></button>
     </section>
-
 </main>
     <script>
   const selectMagia = document.getElementById("magia");
