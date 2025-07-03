@@ -20,7 +20,7 @@ body.dark-mode {
 }
 
 .fondo--fuego {
-  background-image: -moz-linear-gradient(src);
+  background: linear-gradient(45deg, #d1dd27, #ae8707);
 }
 
 .fondo--agua {
