@@ -49,17 +49,7 @@
             <label for="comentarios" class="form__label">Comentarios adicionales</label>
             <textarea id="comentarios" class="form__textarea" rows="4" placeholder="¡Mientras no sea un avada kedavra a la cabra, comenta lo que quieras!"></textarea>
 
-            <button class="form__button form__button--sparkle">
-  Unirse al Club
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-  <span class="sparkle"></span>
-</button>
+           <button class="magic-boton">Unirme al Club ✨</button>
 
   </form>
 
@@ -94,7 +84,7 @@
   selectMagia.addEventListener("focus", () => {
     reproducirSonido();
   });
-
+ 
   // Función para reproducir el sonido
   function reproducirSonido() {
     if (sonido) {
@@ -105,9 +95,9 @@
     }
   }
 
-  const toggleButton = document.getElementById("toggle-mode");
+const toggleButton = document.getElementById("toggle-mode");
 
-toggleButton.addEventListener("click", function() {
+toggleButton.addEventListener("click", function () {
   // Cambiar el modo oscuro al cuerpo
   document.body.classList.toggle("dark-mode");
 
@@ -117,6 +107,10 @@ toggleButton.addEventListener("click", function() {
   } else {
     toggleButton.textContent = "<DARKMODE>";
   }
+
+  // Opcional: Cambiar también el modo de la tarjeta
+  const card = document.querySelector(".card");
+  card.classList.toggle("card-darkmode");
 });
 
 
