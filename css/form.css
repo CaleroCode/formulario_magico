@@ -2,6 +2,7 @@ form {
   justify-content: center;
   align-items: center;
   max-width: 350px;
+  
   padding: 0.4rem;
   border-radius: 10px;
   font-family: sans-serif;
@@ -22,6 +23,7 @@ form {
 .form__select,
 .form__textarea {
   width: 80%;
+  
   padding: 0.75rem;
   border: none;
   border-radius: 0.5rem;
@@ -37,6 +39,7 @@ form {
 .form__checkbox {
   display: block;
   margin: 0.5rem 0;
+  
 }
 
 .form__button {
@@ -48,7 +51,7 @@ form {
   cursor: pointer;
   background: #0083b0;
   color: white;
-  overflow: hidden; /* Limita los efectos dentro del área del botón */
+  overflow: hidden; 
 }
 
 .form__button .sparkle {
@@ -110,4 +113,10 @@ form {
     transform: translate(-50%, -50%) scale(2.5);
     opacity: 0;
   }
+}
+
+/* juntar en la misma linea el si y no */
+.form__option {
+  display: inline-block;
+  margin-right: 1rem; 
 }
